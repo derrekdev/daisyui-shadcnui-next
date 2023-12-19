@@ -12,6 +12,7 @@ import {
 } from "../ui/dialog";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
+import { toast } from "../ui/use-toast";
 
 function ShadcnDialog({
   link,
@@ -51,7 +52,12 @@ function ShadcnDialog({
               type="submit"
               size="sm"
               className="px-3"
-              onClick={() => handleCopy(link)}
+              onClick={() => {
+                handleCopy(link);
+                toast({
+                  description: "Your message has been sent.",
+                });
+              }}
             >
               <span className="sr-only">Copy</span>
               <Copy className="h-4 w-4" />
