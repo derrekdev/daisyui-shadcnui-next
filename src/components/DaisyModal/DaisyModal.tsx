@@ -1,4 +1,5 @@
 import { Copy } from "lucide-react";
+import { useState } from "react";
 
 function DaisyModal({
   link,
@@ -7,6 +8,8 @@ function DaisyModal({
   link: string;
   handleCopy: (link: string) => void;
 }) {
+  const [showToast, setShowToast] = useState(false);
+
   return (
     <div>
       <button
@@ -46,7 +49,13 @@ function DaisyModal({
               <button
                 type="submit"
                 className="btn btn-sm px-3"
-                onClick={() => handleCopy(link)}
+                onClick={() => {
+                  handleCopy(link);
+                  setShowToast(true);
+                  setTimeout(() => {
+                    setShowToast(false);
+                  }, 5000);
+                }}
               >
                 <span className="sr-only">Copy</span>
                 <Copy className="h-4 w-4" />
@@ -64,6 +73,13 @@ function DaisyModal({
           <button>close</button>
         </form>
       </dialog>
+      {!!showToast && (
+        <div className="toast">
+          <div className="alert alert-success">
+            <span>You've copy the link.</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

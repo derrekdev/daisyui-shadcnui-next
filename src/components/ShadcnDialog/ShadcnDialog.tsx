@@ -55,7 +55,9 @@ function ShadcnDialog({
               onClick={() => {
                 handleCopy(link);
                 toast({
-                  description: "Your message has been sent.",
+                  variant: "default",
+                  className: "bg-green-500 text-neutral-900",
+                  description: "You've copy the link.",
                 });
               }}
             >

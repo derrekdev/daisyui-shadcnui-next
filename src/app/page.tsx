@@ -46,11 +46,11 @@ export default function Home() {
         <p className="flex flex-row justify-center ">
           Check the github repo for this template
           <a
-            className="btn btn-xs btn-ghost p-0 hover:scale-125 ml-2"
+            className="btn btn-xs btn-ghost p-0 hover:scale-125 hover:bg-transparent ml-2"
             href="https://github.com/derrekdev/daisyui-shadcnui-next"
             target="_blank"
           >
-            <Github size="xs" />
+            <Github />
           </a>
         </p>
       </footer>
