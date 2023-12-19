@@ -1,36 +1,42 @@
-import ButtonClick from "@/components/ButtonClick/ButtonClick";
+import ButtonContainer from "@/components/ButtonContainer/ButtonContainer";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-60">
       <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+        className="relative drop-shadow-[0_0_0.2rem_#ffffff70]"
         src="/next.svg"
         alt="Next.js Logo"
-        width={180}
-        height={37}
+        width={380}
+        height={100}
         priority
       />
+      <div className="flex flex-row justify-between items-center w-[800px]">
+        <div className=" ">
+          <Image
+            className="relative drop-shadow-[0_0_0.2rem_#ffffff70] "
+            src="/daisyui.png"
+            alt="Daisy UI Logo"
+            width={380}
+            height={100}
+            priority
+          />
+        </div>
+        <div className="text-6xl">+</div>
+        <div>
+          <Image
+            className="relative drop-shadow-[0_0_0.2rem_#ffffff70]"
+            src="/shadcnui.png"
+            alt="Shadcn UI Logo"
+            width={380}
+            height={100}
+            priority
+          />
+        </div>
+      </div>
 
-      <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-        src="/daisyui.png"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
-
-      <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-        src="/shadcn-ui.png"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
-      <ButtonClick />
+      <ButtonContainer />
     </main>
   );
 }
