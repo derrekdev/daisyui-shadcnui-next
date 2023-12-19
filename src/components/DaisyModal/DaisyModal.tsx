@@ -2,18 +2,20 @@ import { Copy } from "lucide-react";
 import { useState } from "react";
 
 function DaisyModal({
+  buttonTitle,
   link,
   handleCopy,
 }: {
+  buttonTitle: string;
   link: string;
   handleCopy: (link: string) => void;
 }) {
   const [showToast, setShowToast] = useState(false);
 
   return (
-    <div>
+    <div className="max-sm:px-2 w-full">
       <button
-        className="btn btn-primary"
+        className="btn btn-primary max-sm:w-full"
         onClick={() => {
           if (document)
             (
@@ -21,7 +23,7 @@ function DaisyModal({
             ).showModal();
         }}
       >
-        Button on DaisyUi
+        {!!buttonTitle && buttonTitle}
       </button>
       <dialog className="modal" id="my_modal">
         <div className="modal-box">
@@ -64,8 +66,8 @@ function DaisyModal({
           </div>
 
           <div className="modal-action">
-            <form method="dialog">
-              <button className="btn btn-error">Close</button>
+            <form method="dialog" className=" w-full text-right">
+              <button className="btn btn-error max-sm:w-full">Close</button>
             </form>
           </div>
         </div>

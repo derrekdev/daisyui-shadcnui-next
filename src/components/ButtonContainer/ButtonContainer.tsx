@@ -12,9 +12,17 @@ function ButtonContainer() {
   };
 
   return (
-    <div className="flex flex-row items-center gap-20">
-      <DaisyModal link={daisyUILink} handleCopy={handleCopy} />
-      <ShadcnDialog link={shadcnUILink} handleCopy={handleCopy} />
+    <div className="flex max-sm:flex-col md:flex-row items-center max-md:gap-4 md:gap-20 max-sm:w-full">
+      <DaisyModal
+        buttonTitle="Button on DaisyUi"
+        link={daisyUILink}
+        handleCopy={handleCopy}
+      />
+      <ShadcnDialog
+        buttonTitle="Button on Shadcn/ui"
+        link={shadcnUILink}
+        handleCopy={handleCopy}
+      />
     </div>
   );
 }
