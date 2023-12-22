@@ -5,9 +5,22 @@ This repository is for the configuration for combining DaisyUI and Shadcn/Ui on 
 ## Requirements
 - atleast Node.js version 18.17
 
+## UIs used
+
+- [Next.Js](https://nextjs.org//)
+- [Tailwind](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
+- [Shadcn/UI](https://ui.shadcn.com/)
+
+## UI Versions
+- Tailwind version: 3.3.0
+- DaisyUI version: 4.4.20
+- Shadcn/UI version: (July 2023)
+- Radix UI(Required on Shadcn/UI) version: 2.0.2
+
 ## Installation
 
-### Download Repository
+### A. Download Repository
 
 1. Open terminal
 
@@ -17,10 +30,11 @@ This repository is for the configuration for combining DaisyUI and Shadcn/Ui on 
     ```
     git clone https://github.com/derrekdev/daisyui-shadcnui-next.git
     ```
+<br />
 
-### Copying the files
+### B. Copying the files
 
-1. Install Nest.Js(with Typescript) in your directory
+1. Install Next.Js(with Typescript) in your directory
    
 3. Install DaisyUi and Shadcn/Ui(install with Typescript and CSS Variables) in your project
    
@@ -32,15 +46,16 @@ This repository is for the configuration for combining DaisyUI and Shadcn/Ui on 
    
    - Global CSS file(src/app)
      - global.css
+<br />
 
-### Updating the code to your file
+### C. Updating the code to your file
 
-1. Install Nest.Js(with Typescript) in your directory
+1. Install Next.Js(with Typescript) in your directory
    
-2. Install DaisyUi and Shadcn/Ui(install with Typescript and CSS Variables) in your project
+2. Install DaisyUi and Shadcn/Ui(install with CSS Variables) in your project
 
 3. Update the following files in your project
-    - tailwind.config.ts
+    - tailwind.config.ts/tailwind.config.js
        ```
        /** @type {import('tailwindcss').Config} */
        module.exports = {
