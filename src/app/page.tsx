@@ -7,7 +7,7 @@ export default function Home() {
     "relative drop-shadow-[0_0_0.2rem_#ffffff70] hover:drop-shadow-[0_0_0.8rem_#ffffff70] transition-all";
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-52 max-md:px-6">
+    <main className="flex min-h-screen flex-col items-center justify-between max-md:pt-20 md:pt-52 max-md:px-6">
       <div className="flex flex-col items-center">
         <a href="https://nextjs.org/" target="_blank">
           <Image
@@ -48,22 +48,21 @@ export default function Home() {
           </a>
         </div>
       </div>
-
       <ButtonContainer />
+      <div className="flex flex-col items-center gap-4 max-md:pt-20">
+        <p className="text-sm text-neutral-300">Check the source code</p>
+        <a
+          className="btn hover:scale-125"
+          href="https://github.com/derrekdev/daisyui-shadcnui-next"
+          target="_blank"
+        >
+          <Github />
+        </a>
+      </div>
       <footer className="pb-2 text-neutral-500 text-sm text-center">
         <p className="text-center">
           This is only a template for using both daisyUI and shadcn/ui libaries
           combined.
-        </p>
-        <p className="flex flex-row justify-center ">
-          Check the github repo for this template
-          <a
-            className="btn btn-xs btn-ghost p-0 hover:scale-125 hover:bg-transparent ml-2"
-            href="https://github.com/derrekdev/daisyui-shadcnui-next"
-            target="_blank"
-          >
-            <Github />
-          </a>
         </p>
       </footer>
     </main>
