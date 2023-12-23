@@ -1,9 +1,6 @@
 # DaisyUI and Shadcn/UI in NextJs
 
-This repository is for the configuration for combining DaisyUI and Shadcn/Ui on NextJs
-
-## Requirements
-- atleast Node.js version 18.17
+This repository serves as an example for configuring the integration of DaisyUI and Shadcn/Ui within a Next.js project. 
 
 ## UIs used
 
@@ -11,6 +8,18 @@ This repository is for the configuration for combining DaisyUI and Shadcn/Ui on 
 - [Tailwind](https://tailwindcss.com/)
 - [DaisyUI](https://daisyui.com/)
 - [Shadcn/UI](https://ui.shadcn.com/)
+
+  
+## Requirements
+> [!NOTE]
+> This was tested using Typescript, have not yet tested with javascript
+
+- Using this repo
+    - atleast Node.js version 18.17
+<br />
+
+- Copying the files or codes
+    - Check the UI Versions below
 
 ## UI Versions
 - Tailwind version: 3.3.0
@@ -30,15 +39,21 @@ This repository is for the configuration for combining DaisyUI and Shadcn/Ui on 
     ```
     git clone https://github.com/derrekdev/daisyui-shadcnui-next.git
     ```
+4. Go to directory src/app and open globals.css
+    > If you want to use Neutral base color, you don't have to do this step and step 5.
+<br />
+
+5. Uncomment the base color you want
+    > Don't forget to comment all the css variablas inside Neutral base color
 <br />
 
 ### B. Copying the files
 
 1. Install Next.Js(with Typescript) in your directory
    
-3. Install DaisyUi and Shadcn/Ui(install with Typescript and CSS Variables) in your project
+2. Install DaisyUi and Shadcn/Ui(install with Typescript and CSS Variables) in your project
    
-5. Copy the following files in this repository to your project
+3. Copy the following files in this repository to your project
    - Root Folder
      - tailwind.config.ts
 
@@ -46,11 +61,13 @@ This repository is for the configuration for combining DaisyUI and Shadcn/Ui on 
    
    - Global CSS file(src/app)
      - global.css
+     - Uncomment the base color you want
+        > Don't forget to comment all the css variablas inside Neutral base color
 <br />
 
 ### C. Updating the code to your file
 
-1. Install Next.Js(with Typescript) in your directory
+1. Go to you project directory.
    
 2. Install DaisyUi and Shadcn/Ui(install with CSS Variables) in your project
 
