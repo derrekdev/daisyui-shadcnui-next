@@ -89,10 +89,11 @@ Check the [Website](https://daisyui-shadcnui-next.vercel.app/)
       
         @layer base {
           * {
-            @apply border-border p-0 m-0;
+            @apply border-border;
           }
           body {
             @apply text-foreground;
           }
         }
       ```
+      > bg-background was removed on body.
