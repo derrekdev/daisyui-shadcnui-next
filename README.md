@@ -26,7 +26,7 @@ Check the [Website](https://daisyui-shadcnui-next.vercel.app/)
 ## UI Versions
 - Tailwind version: 3.3.0
 - DaisyUI version: 4.4.20
-- Shadcn/UI version: (July 2023)
+- Shadcn/UI version: (December 2023)
 - Radix UI(Required on Shadcn/UI) version: 2.0.2
 
 ## Installation
