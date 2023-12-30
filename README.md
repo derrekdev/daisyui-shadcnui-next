@@ -1,6 +1,6 @@
 # DaisyUI and Shadcn/UI in NextJs
 
-This repository serves as an example for configuring the integration of DaisyUI and Shadcn/Ui within a Next.js project. 
+This repository provides a practical example for setting up the integration of DaisyUI and Shadcn/Ui components within a Next.js project. It serves as a template for creating a website using Next.js, showcasing the combined capabilities of DaisyUI and Shadcn/ui components for efficient web development.
 
 Check the [Website](https://daisyui-shadcnui-next.vercel.app/)
 <br />
